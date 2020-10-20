@@ -16,7 +16,7 @@ var options = {
     env: 'AutodeskProduction',
     api: 'derivativeV2',  // for models uploaded to EMEA change this option to 'derivativeV2_EU'
     getAccessToken: function(onTokenReady) {
-		const queryString = window.location.search;
+		const queryString = window.location.hash;
 		console.log(queryString);
 		const urlParams = new URLSearchParams(queryString);
         //
